@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+body {
+    margin: 0;
+    font-family: 'Lugrasimo',sans-serif;
+}
+body * {
+  box-sizing: border-box;
+}
+.main_login{
+  width: 100vw; 
+  height: 100vh;
+  background:  #2f109e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.esquerda_login{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.esquerda_login_imagem{
+  width: 35vw;
+}
+.esquerda_login > h1{
+    color: #6afd00;
+    font-size: 3vw;
+}
+
+.direita_login{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area_de_login{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background:#4700BF;
+  border-radius: 15px;
+  box-shadow: 0px 12px 40px #00000056;
+}
+.area_de_login > h1{
+  color:#6bfc03;
+  font-weight: 800;
+  margin: 0;
+}
+
+.campo_de_texto{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.campo_de_texto > input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: aliceblue;
+  font-size: 12pt;
+  box-shadow: 0px 12px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.campo_de_texto > label{
+  color: #6afd00;
+  margin-bottom: 10px;
+}
+
+.campo_de_texto > input::placeholder{
+  color: rgb(252, 253, 253);
+}
+
+.btn_login{
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2f109e;
+  background: #5fda07;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #163302;
+}
+
+@media only screen and (max-width: 950px){
+  .area_de_login{
+    width: 85%
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .main_login{
+    flex-direction: column;
+  }
+   .esquerda_login > h1{
+    display: none;
+   } 
+  .esquerda_login{
+    width: 100%;
+    height: auto;
+  }
+ .direita_login{
+  width: 100%;
+  height: auto;
+ }
+ .esquerda_login_imagem{
+  width: 50vw;
+ }
+ .area_de_login{
+  width: 90%;
+ }
+}
+
